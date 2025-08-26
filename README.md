@@ -22,7 +22,7 @@ Inside the script, there will be placeholders for two device names. Replace thos
 
 4. **Save the Script**  
 After replacing the device names, save and close the script file.
-ctrl+x and y when prompted 
+ctrl+x and enter when prompted 
 
 ---
 
