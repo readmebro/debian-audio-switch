@@ -2,7 +2,7 @@
 This is just a simple script you can use to assign a keyboard shortcut to switch your audio device (e.g. friom headset to speakers). Feel free to take and modify any way you want!  
 - Note down the exact names of the two devices you want to switch between.
 ## Step 1: Find your Audio Devices you want to use
-Open your terminal and type "pactl list short sinks" this will return your devices something like this:
+Open your terminal and type <pre lang="markdown">pactl list short sinks</pre> this will return your devices something like this:
 
 <img width="1398" height="81" alt="image" src="https://github.com/user-attachments/assets/1664281f-994f-472b-986a-35d375308eaf" />
 In my case I want "alsa_output.usb-Razer_Razer_Nari_Essential-00.iec958-stereo" and "lsa_output.pci-0000_2f_00.4.analog-stereo"
@@ -16,7 +16,8 @@ Find the script file you download to use to toggle audio devices (e.g., `switch-
 
 2. **Edit the Script to Include Your Devices**  
 Inside the script, there will be placeholders for two device names. Replace those placeholders with the exact device names you noted earlier.
-"nano ~/switch-specific-audio.sh" and replace SINK1 and SINK2 with your devices, leave the quotations 
+<pre lang="markdown">nano ~/switch-specific-audio.sh</pre>
+  and replace SINK1 and SINK2 with your devices, leave the quotations 
 <img width="977" height="606" alt="image" src="https://github.com/user-attachments/assets/bcae7989-f3f0-4011-acf6-2fb0a26a9004" />
 
 
@@ -30,11 +31,11 @@ ctrl+x and enter when prompted
 
 1. **Set the Script as Executable**  
 Before running the script, make sure it has permission to execute. You can do this by running a command in the terminal or following your system’s instructions for file permissions.
-"chmod +x switch-specific-audio.sh"
+<pre lang="markdown">chmod +x switch-specific-audio.sh</pre>
 
 2. **Set Permissions**
 Now for security, since this script only needs to be run by you, the best practice is to limit access to yourself only.
-"chmod 700 ~/switch-specific-audio.sh"
+<pre lang="markdown">chmod 700 ~/switch-specific-audio.sh</pre>
 
 ---
 
